@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Classic Rock Record Player</title>
+    <meta charset="utf-8">
+    <link rel= "stylesheet" href="RecordPlayer.css" type="text/css">
+  </head>
+<body>
+  <h1>Classic Rock Record Player</h1>
+  <p>Click an album to play a song. Double click to pause it.</p>
+    <br>
+
+  <div id ="container">
+
+  <div class="reveal-text-on-image slide-down" data-text="Pet Sounds - The Beach Boys"
+    style="background-image:url(https://images-na.ssl-images-amazon.com/images/I/814ND%2BxlfCL._SL1500_.jpg)"
+    onclick="playBeachBoys();hideRecordPlayer();" ondblclick="pauseBeachBoys();showRecordPlayer();">
+  </div>
+
+  <div class="reveal-text-on-image slide-down" data-text="The Doors - The Doors"
+    style="background-image:url(https://popmatters-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F11844270%2F980x.jpg/2000%2C2000/aGv7ExbKeP4k7n0e/img.jpg)"
+    onclick="playTheDoors();hideRecordPlayer();" ondblclick="pauseTheDoors();showRecordPlayer();">
+  </div>
+
+  <div class="reveal-text-on-image slide-down" data-text="In the Court of the Crimson King - King Crimson"
+    style="background-image:url(https://img.haikudeck.com/mu/8a9011f4e0d614bceb039665a2630822.jpeg)"
+    onclick="playKingCrimson();hideRecordPlayer();" ondblclick="pauseKingCrimson();showRecordPlayer();">
+  </div>
+
+  <div class="reveal-text-on-image slide-down" data-text="The Dark Side of the Moon - Pink Floyd"
+    style="background-image:url(https://www.thisdayinmusic.com/wp-content/uploads/2018/05/the-dark-side-of-the-moon.jpg)"
+    onclick="playPinkFloyd();hideRecordPlayer();" ondblclick="pausePinkFloyd();showRecordPlayer();">
+  </div>
+
+  <div class="reveal-text-on-image slide-down" data-text="Abbey Road - The Beatles"
+    style="background-image:url(https://i.scdn.co/image/7e6a2884ff7e130aef0b00021d9c8065bb54b992)"
+    onclick="playTheBeatles();hideRecordPlayer();" ondblclick="pauseTheBeatles();showRecordPlayer();">
+  </div>
+  </div>
+
+<audio id="BeachBoys"controls>
+  <source src="Beach Boys.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="TheDoors"controls>
+  <source src="The Doors.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="KingCrimson"controls>
+  <source src="King Crimson.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="PinkFloyd"controls>
+  <source src="Pink Floyd.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="TheBeatles"controls>
+  <source src="The Beatles.mp3" type="audio/mpeg">
+</audio>
+
+<div id="RecordBox">
+      <img id="RecordPlayerStill" src="Record Player Still.png"></img>
+      <img id="RecordPlayer" src="Record Player.gif"></img>
+</div>
+
+</body>
+  <script src="RecordPlayer.js" defer></script>
+  </html>
